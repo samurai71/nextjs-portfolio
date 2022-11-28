@@ -59,7 +59,7 @@ export default function Home({ blogs, skills }) {
               <div className='flex flex-col gap-1'>
                 <motion.h1
                   variants={opacityVariant}
-                  className='text-5xl lg:text-6xl font-bold font-sarina'
+                  className='text-5xl lg:text-6xl font-bold font-sarina text-blue-600'
                 >
                   Mark Landeryou
                 </motion.h1>
