@@ -1,34 +1,49 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Getting Started
 
-First, run the development server:
-
+Clone the repository-
 ```bash
-npm run dev
-# or
-yarn dev
+git clone https://github.com/j471n/j471n.in.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Install all the dependencies-
+```bash
+cd j471n.in
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+# Install dependencies with pnpm
+pnpm install
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+# Running the dev server
+pnpm dev
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+After that server should be running on [localhost:3000](http://localhost:3000)
+> I am using [pnpm](https://pnpm.io/) you can use [yarn](https://yarnpkg.com/) as well as [npm](https://www.npmjs.com/)
 
-## Learn More
+> Warning: You could ran to into errors if you don't populate the `.env.local` with correct values
 
-To learn more about Next.js, take a look at the following resources:
+# Tools Used 
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Framework**: [Next.js](https://nextjs.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Content**: [MDX](https://github.com/mdx-js/mdx)
+- **Animations**: [Framer Motion](https://framer.com/motion)
+- **Deployment**: [Vercel](https://vercel.com)
+- **Icons**: [React Icons](https://react-icons.github.io/react-icons/)
+- **Plugins**: [rehype](https://github.com/rehypejs/rehype)
+- [SWR](https://swr.vercel.app/)
+- [Prettier](https://prettier.io)
+- [Email.js](https://www.emailjs.com/)
+- [highlight.js](https://github.com/highlightjs/highlight.js)
+- [React Toastify](https://github.com/fkhadra/react-toastify)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+# Setting up the Environment
+I've given you [`.env.example`](/.env.example) as the demo. you can create your own `.env.local`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- [Spotify Integration](https://j471n.in/blogs/spotify-api-nextjs)
+- [Dev.to API](https://dev.to/settings/account)
+- [Email.js](https://www.emailjs.com/docs/sdk/installation/)
+- [Revue API](https://www.getrevue.co/app/integrations)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+For More info [visit here](/.env.example)
