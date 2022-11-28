@@ -10,7 +10,7 @@ export default function PageTop({ pageTitle, headingClass, children }) {
     <div className='w-full flex flex-col gap-3 py-5 select-none mb-10'>
       <AnimatedHeading
         variants={fromLeftVariant}
-        className={`text-4xl  md:text-5xl font-bold text-blue-700 dark:text-neutral-200 ${headingClass}`}
+        className={`text-4xl  md:text-5xl font-bold text-blue-700 ${headingClass}`}
       >
         {pageTitle}
       </AnimatedHeading>
