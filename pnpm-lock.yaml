@@ -7,40 +7,40 @@ specifiers:
   '@tailwindcss/line-clamp': ^0.4.0
   '@tailwindcss/typography': ^0.5.2
   autoprefixer: ^10.4.7
-  dompurify: ^2.3.6
+  dompurify: ^2.3.8
   eslint: 8.14.0
   eslint-config-next: 12.1.6
-  firebase-admin: ^10.2.0
-  framer-motion: ^6.3.3
+  firebase-admin: ^10.3.0
+  framer-motion: ^6.3.11
   fs: ^0.0.1-security
   globby: ^13.1.1
   gray-matter: ^4.0.3
   hastscript: ^7.0.2
   highlight.js: ^11.5.1
-  html-react-parser: ^1.4.12
+  html-react-parser: ^1.4.14
   next: ^12.1.6
   next-mdx-remote: ^4.0.3
-  next-pwa: ^5.5.2
+  next-pwa: ^5.5.4
   nextjs-google-analytics: ^1.2.0
   nprogress: ^0.2.0
-  postcss: ^8.4.13
-  postcss-preset-env: ^7.5.0
+  postcss: ^8.4.14
+  postcss-preset-env: ^7.7.1
   prettier: ^2.6.2
   react: 18.1.0
   react-circular-progressbar: ^2.0.4
   react-dom: 18.1.0
-  react-icons: ^4.3.1
-  react-intersection-observer: ^9.1.0
+  react-icons: ^4.4.0
+  react-intersection-observer: ^9.2.2
   react-markdown: ^8.0.3
   react-qr-code: ^2.0.7
   react-ripples: ^2.2.1
   react-share: ^4.4.0
   react-share-social: ^0.1.48
-  react-toastify: ^9.0.1
+  react-toastify: ^9.0.4
   react-tsparticles: ^2.0.6
   reading-time: ^1.5.0
   rehype-autolink-headings: ^6.1.1
-  rehype-pretty-code: ^0.3.1
+  rehype-pretty-code: ^0.3.2
   rehype-slug: ^5.0.1
   rss: ^1.2.2
   shiki: ^0.10.1
@@ -2537,7 +2537,7 @@ packages:
       postcss: ^8.1.0
     dependencies:
       browserslist: 4.20.4
-      caniuse-lite: 1.0.30001352
+      caniuse-lite: 1.0.30001434
       fraction.js: 4.2.0
       normalize-range: 0.1.2
       picocolors: 1.0.0
@@ -2656,7 +2656,7 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001352
+      caniuse-lite: 1.0.30001434
       electron-to-chromium: 1.4.152
       escalade: 3.1.1
       node-releases: 2.0.5
@@ -2690,8 +2690,8 @@ packages:
     resolution: {integrity: sha512-QOSvevhslijgYwRx6Rv7zKdMF8lbRmx+uQGx2+vDc+KI/eBnsy9kit5aj23AgGu3pa4t9AgwbnXWqS+iOY+2aA==}
     engines: {node: '>= 6'}
 
-  /caniuse-lite/1.0.30001352:
-    resolution: {integrity: sha512-GUgH8w6YergqPQDGWhJGt8GDRnY0L/iJVQcU3eJ46GYf52R8tk0Wxp0PymuFVZboJYXGiCqwozAYZNRjVj6IcA==}
+  /caniuse-lite/1.0.30001434:
+    resolution: {integrity: sha512-aOBHrLmTQw//WFa2rcF1If9fa3ypkC1wzqqiKHgfdrXTWcU8C4gKVZT77eQAPWN1APys3+uQ0Df07rKauXGEYA==}
 
   /ccount/2.0.1:
     resolution: {integrity: sha512-eyrF0jiFpY+3drT6383f1qhkbGsLSifNAjA61IUjZjmLCWjItY6LB9ft9YhoDgwfmclB2zhu51Lc7+95b8NRAg==}
@@ -5351,7 +5351,7 @@ packages:
         optional: true
     dependencies:
       '@next/env': 12.1.6
-      caniuse-lite: 1.0.30001352
+      caniuse-lite: 1.0.30001434
       postcss: 8.4.5
       react: 18.1.0
       react-dom: 18.1.0_react@18.1.0

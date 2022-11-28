@@ -1,4 +1,4 @@
-import UPI from '@components/SVG/UPI';
+//import UPI from '@components/SVG/UPI';
 import {
   FadeContainer,
   fromTopVariant,
@@ -17,7 +17,7 @@ import { lockScroll, removeScrollLock } from '@utils/functions';
 import AnimatedDiv from '@components/FramerMotion/AnimatedDiv';
 
 export default function Support() {
-  const [showUPIForm, setShowUPIForm] = useState(false);
+  //const [showUPIForm, setShowUPIForm] = useState(false);
 
   return (
     <section>
@@ -45,7 +45,7 @@ export default function Support() {
             </Link>
           );
         })}
-        <motion.button
+        {/* <motion.button
           variants={popUp}
           onClick={() => {
             setShowUPIForm(!showUPIForm);
@@ -53,21 +53,21 @@ export default function Support() {
           }}
           className='bg-white text-darkSecondary dark:bg-darkSecondary dark:text-gray-300 grid place-items-center p-5 group rounded-xl hover:ring-1 shadow ring-gray-500 duration-200 active:ring'
         >
-          <div className='flex flex-col items-center gap-5 select-none'>
+         <div className='flex flex-col items-center gap-5 select-none'>
             <UPI className='text-3xl duration-150 group-hover:lg:scale-150 ' />
             <p className='font-semibold text-sm'>UPI</p>
-          </div>
-        </motion.button>
+          </div> 
+        </motion.button> */}
       </AnimatedDiv>
       <AnimatePresence>
-        {showUPIForm && (
+        {/* {showUPIForm && (
           <UPIPaymentForm
             close={() => {
               setShowUPIForm(false);
               removeScrollLock();
             }}
           />
-        )}
+        )} */}
       </AnimatePresence>
     </section>
   );
