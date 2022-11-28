@@ -5,11 +5,11 @@ import { HiMail } from 'react-icons/hi';
 import { SiCodepen } from 'react-icons/si';
 
 export default [
-  {
-    title: 'Twitter',
-    Icon: AiOutlineTwitter,
-    url: 'https://twitter.com/intent/follow?screen_name=j471n_',
-  },
+  // {
+  //   title: 'Twitter',
+  //   Icon: AiOutlineTwitter,
+  //   url: 'https://twitter.com/intent/follow?screen_name=j471n_',
+  // },
   {
     title: 'LinkedIn',
     Icon: BsLinkedin,
@@ -25,24 +25,24 @@ export default [
     Icon: AiOutlineInstagram,
     url: 'https://www.instagram.com/j471n_',
   },
-  {
-    title: 'Dev.to',
-    Icon: FaDev,
-    url: 'https://dev.to/j471n',
-  },
-  {
-    title: 'Codepen',
-    Icon: SiCodepen,
-    url: 'https://codepen.io/j471n',
-  },
-  {
-    title: 'Facebook',
-    Icon: BsFacebook,
-    url: 'https://www.facebook.com/ja7in/',
-  },
-  {
-    title: 'Mail',
-    Icon: HiMail,
-    url: 'mailto:jatinsharma8669@gmail.com',
-  },
+  // {
+  //   title: 'Dev.to',
+  //   Icon: FaDev,
+  //   url: 'https://dev.to/j471n',
+  // },
+  // {
+  //   title: 'Codepen',
+  //   Icon: SiCodepen,
+  //   url: 'https://codepen.io/j471n',
+  // },
+  // {
+  //   title: 'Facebook',
+  //   Icon: BsFacebook,
+  //   url: 'https://www.facebook.com/ja7in/',
+  // },
+  // {
+  //   title: 'Mail',
+  //   Icon: HiMail,
+  //   url: 'mailto:jatinsharma8669@gmail.com',
+  // },
 ];
