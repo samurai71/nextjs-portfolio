@@ -52,7 +52,7 @@ module.exports = [
   {
     name: 'Python',
     level: 85,
-    pinned: true,
+    pinned: false,
   },
   {
     name: 'MySQL',
