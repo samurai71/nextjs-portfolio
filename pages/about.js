@@ -20,7 +20,7 @@ export default function About({ about }) {
       />
 
       <section className='pageTop'>
-        <PageTop pageTitle='About me'></PageTop>
+        <PageTop pageTitle='About'></PageTop>
         <AnimatedDiv
           variants={opacityVariant}
           className={` ${styles.blog} blog-container prose-sm  3xl:prose-lg`}

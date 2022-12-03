@@ -18,6 +18,7 @@ import { getPinnedSkills } from '@lib/dataFetch';
 import getRSS from '@lib/generateRSS';
 import generateSitemap from '@lib/sitemap';
 import { motion } from 'framer-motion';
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { FiDownload } from 'react-icons/fi';
 import Ripples from 'react-ripples';
 import MDXContent from '@lib/MDXContent';
@@ -57,28 +58,67 @@ export default function Home({ blogs, skills }) {
 
             <div className='w-full flex flex-col p-5 gap-3 select-none text-center '>
               <div className='flex flex-col gap-1'>
+                <motion.p
+                  variants={opacityVariant}
+                  className='tracking-widest italic uppercase text-red-600 text-md'
+                >
+                  Let's build something together
+                </motion.p>
                 <motion.h1
                   variants={opacityVariant}
-                  className='text-5xl lg:text-6xl font-bold font-sarina text-blue-700'
+                  className='text-5xl lg:text-6xl font-bold tracking-widest'
                 >
-                  Mark Landeryou
+                  Hi I'm <span className='text-blue-700'>Mark Landeryou</span>
                 </motion.h1>
-                <motion.p
+                <motion.h1
+                  variants={opacityVariant}
+                  className='text-5xl lg:text-6xl font-bold'
+                >
+                  A Full Stack Web Developer
+                </motion.h1>
+                {/* <motion.p
                   variants={opacityVariant}
                   className='font-medium text-xs md:text-sm lg:text-lg text-gray-500'
                 >
                   React Developer, Competitive Programmer
-                </motion.p>
+                </motion.p> */}
               </div>
 
               <motion.p
                 variants={opacityVariant}
                 className=' text-slate-500 dark:text-gray-300 font-medium text-sm md:text-base text-center'
               >
-                I am currently pursuing my Bachelor Degree in Computer Science.
-                I can code in Python, C, C++, etc.
+                I’m focused on building responsive web applications while
+                continually learning new technologies.
               </motion.p>
+              <motion.div
+                initial='hidden'
+                whileInView='visible'
+                variants={FadeContainer}
+                viewport={{ once: true }}
+                className='flex items-center justify-evenly'
+              >
+                <a
+                  href='https://www.linkedin.com/in/marklanderyou/'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  <div className='cursor-pointer rounded-full p-6 shadow-lg shadow-gray-400 dark:shadow-none dark:bg-slate-500 duration-300 ease-in hover:scale-110'>
+                    <FaLinkedinIn />
+                  </div>
+                </a>
+                <a
+                  href='https://github.com/samurai71'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  <div className='cursor-pointer rounded-full p-6 shadow-lg shadow-gray-400 dark:shadow-none dark:bg-slate-500 duration-300 ease-in hover:scale-110'>
+                    <FaGithub />
+                  </div>
+                </a>
+              </motion.div>
             </div>
+            {/* <div className='m-auto flex max-w-[330px] items-center justify-between'></div> */}
 
             <motion.div className='rounded-md overflow-hidden' variants={popUp}>
               <Ripples className='w-full' color='rgba(0, 0, 0, 0.5)'>

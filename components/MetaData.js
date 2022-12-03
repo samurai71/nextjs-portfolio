@@ -29,7 +29,7 @@ export default function MetaData({
       <meta name='robots' content='index,follow' />
       <meta
         name='keywords'
-        content={`${keywords || ''} Jatin, Mark Landeryou, j471n, j471n_`}
+        content={`${keywords || ''} Mark Landeryou, j471n, j471n_`}
       />
 
       {/* Og */}
