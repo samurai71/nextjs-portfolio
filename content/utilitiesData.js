@@ -1,7 +1,6 @@
 import {
   SiVisualstudiocode,
   SiSublimetext,
-  SiMicrosoftedge,
   SiGooglechrome,
   SiReact,
   SiNextdotjs,
@@ -13,7 +12,6 @@ import {
   SiFigma,
   SiInsomnia,
   SiBitwarden,
-  SiSpotify,
   SiObsstudio,
   SiGrammarly,
 } from 'react-icons/si';
@@ -47,30 +45,12 @@ const utilities = {
         Icon: SiSublimetext,
         link: 'https://www.techspot.com/downloads/5546-sublime-text.html',
       },
-      // {
-      //   name: "Andromeda",
-      //   description: "VS Code theme",
-      //   Icon: BsFillPaletteFill,
-      //   link: "https://marketplace.visualstudio.com/items?itemName=EliverLara.andromeda",
-      // },
       {
         name: 'Oh-my-zsh',
         description: 'Terminal Theme',
         Icon: BsFillTerminalFill,
         link: 'https://ohmyz.sh/',
       },
-      // {
-      //   name: 'Windows 11',
-      //   description: 'Operating System',
-      //   Icon: BsWindows,
-      //   link: 'https://www.microsoft.com/software-download/windows11',
-      // },
-      // {
-      //   name: 'Microsoft Edge',
-      //   description: 'Primary Browser',
-      //   Icon: SiMicrosoftedge,
-      //   link: 'https://www.microsoft.com/en-us/edge',
-      // },
       {
         name: 'Chrome',
         description: 'Secondary Browser',
@@ -97,7 +77,7 @@ const utilities = {
       },
       {
         name: 'TailwindCSS',
-        description: 'For styling the fron-end',
+        description: 'For styling the front-end',
         Icon: SiTailwindcss,
         link: 'https://tailwindcss.com/',
       },
@@ -167,25 +147,12 @@ const utilities = {
         Icon: SiObsstudio,
         link: 'https://obsproject.com/',
       },
-      // {
-      //   name: 'Spotify',
-      //   description: 'To Listen Music',
-      //   Icon: SiSpotify,
-      //   link: 'https://www.spotify.com/us/download/windows/',
-      // },
       {
         name: 'Grammarly',
         description: 'Typing assistant that reviews spelling, grammar, etc.',
         Icon: SiGrammarly,
         link: 'https://www.grammarly.com/',
       },
-      // {
-      //   name: 'Everything Search',
-      //   description: 'For Quick searching in Windows',
-      //   Icon: FaSearch,
-      //   link: 'https://www.voidtools.com/downloads/',
-      // },
-
       {
         name: 'ShareX',
         description:
@@ -199,13 +166,6 @@ const utilities = {
         Icon: SVG.Ditto,
         link: 'https://ditto-cp.sourceforge.io/',
       },
-      // {
-      //   name: 'f.lux',
-      //   description: "To adjusts a display's color according to the time",
-      //   Icon: SVG.Flux,
-      //   link: 'https://justgetflux.com/',
-      // },
-
       {
         name: 'Microsoft Todo',
         description: 'To manage all my todos',
