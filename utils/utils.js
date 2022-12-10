@@ -10,6 +10,7 @@ export const navigationRoutes = [
   'blogs',
   'certificates',
   'projects',
+  'contact',
   'newsletter',
   'rss',
 ];

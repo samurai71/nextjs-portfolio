@@ -74,7 +74,7 @@ export default function Home({ blogs, skills }) {
                   variants={opacityVariant}
                   className='text-5xl lg:text-6xl font-bold'
                 >
-                  A Full Stack Web Developer
+                  A Full Stack Web Developer and IoT Developer
                 </motion.h1>
                 {/* <motion.p
                   variants={opacityVariant}

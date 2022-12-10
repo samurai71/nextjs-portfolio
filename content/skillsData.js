@@ -72,7 +72,7 @@ module.exports = [
   {
     name: 'Firebase',
     level: 60,
-    pinned: true,
+    pinned: false,
   },
   {
     name: 'Data Structure',

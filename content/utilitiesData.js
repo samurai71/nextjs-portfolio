@@ -93,18 +93,24 @@ const utilities = {
         Icon: SiPrettier,
         link: 'https://prettier.io/',
       },
+      // {
+      //   name: 'Eslint',
+      //   description: 'Linter',
+      //   Icon: ,
+      //   link: 'https://eslint.org/',
+      // },
       {
         name: 'Git',
         description: 'Version Control',
         Icon: FaGitAlt,
         link: 'https://git-scm.com/downloads',
       },
-      {
-        name: 'Github Desktop',
-        description: 'To Manage the Github Project and Changes',
-        Icon: BsGithub,
-        link: 'https://desktop.github.com/',
-      },
+      // {
+      //   name: 'Github Desktop',
+      //   description: 'To Manage the Github Project and Changes',
+      //   Icon: BsGithub,
+      //   link: 'https://desktop.github.com/',
+      // },
       {
         name: 'pnpm',
         description: 'Primary Package Manager',
