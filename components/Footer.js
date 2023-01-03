@@ -53,6 +53,9 @@ export default function Footer({ setShowQR, showQR }) {
             })}
           </div>
         </section>
+        <div className='flex w-full justify-center'>
+          <p>&copy; All rights reserved.</p>
+        </div>
       </motion.div>
 
       <div className='w-full flex justify-center'>
