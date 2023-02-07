@@ -11,6 +11,7 @@ export const navigationRoutes = [
   'certificates',
   'projects',
   'contact',
+  'stats',
   'newsletter',
   'rss',
 ];

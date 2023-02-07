@@ -8,15 +8,16 @@ import useSWR from 'swr';
 import fetcher from '../lib/fetcher';
 import { HiOutlineQrcode } from 'react-icons/hi';
 
+
 export default function Footer({ setShowQR, showQR }) {
   return (
-    <footer className=' text-gray-600 dark:text-gray-400/50 w-screen font-inter mb-20 print:hidden'>
+    <footer className='w-screen mb-20 text-gray-600 dark:text-gray-400/50 font-inter print:hidden'>
       <motion.div
         initial='hidden'
         whileInView='visible'
         variants={FadeContainer}
         viewport={{ once: true }}
-        className='max-w-4xl 2xl:max-w-5xl 3xl:max-w-7xl p-5 border-t-2 border-gray-200  dark:border-gray-400/10 mx-auto text-sm sm:text-base flex flex-col gap-5'
+        className='flex flex-col max-w-4xl gap-5 p-5 mx-auto text-sm border-t-2 border-gray-200 2xl:max-w-5xl 3xl:max-w-7xl dark:border-gray-400/10 sm:text-base'
       >
         <section className='grid grid-cols-3 gap-10'>
           <div className='flex flex-col gap-4 capitalize'>
@@ -53,12 +54,17 @@ export default function Footer({ setShowQR, showQR }) {
             })}
           </div>
         </section>
+        <div className='flex justify-center w-full'>
+          <p>
+            &copy; {new Date().getFullYear()} All rights reserved.
+          </p>
+        </div>
       </motion.div>
 
-      <div className='w-full flex justify-center'>
+      <div className='flex justify-center w-full'>
         <div
           onClick={() => setShowQR(!showQR)}
-          className='bg-gray-700 text-white p-4 rounded-full cursor-pointer transition-all active:scale-90 hover:scale-105'
+          className='p-4 text-white transition-all bg-gray-700 rounded-full cursor-pointer active:scale-90 hover:scale-105'
         >
           <HiOutlineQrcode className='w-6 h-6 ' />
         </div>
