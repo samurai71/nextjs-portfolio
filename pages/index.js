@@ -45,7 +45,7 @@ export default function Home({ blogs, skills }) {
               variants={popUp}
               className='relative flex items-center justify-center p-3 rounded-full w-44 h-44 xs:w-52 xs:h-52 before:absolute before:inset-0 before:border-t-4 before:border-b-4 before:border-black before:dark:border-white before:rounded-full before:animate-photo-spin'
             >
-              {/* <Image
+               {/* <Image
                 src={homeProfileImage}
                 className='rounded-full shadow filter saturate-0'
                 width={400}
@@ -53,7 +53,7 @@ export default function Home({ blogs, skills }) {
                 alt='cover Profile Image'
                 quality={75}
                 priority={true}
-              /> */}
+              />  */}
             </motion.div>
 
             <div className='flex flex-col w-full gap-3 p-5 text-center select-none '>
@@ -68,7 +68,7 @@ export default function Home({ blogs, skills }) {
                   variants={opacityVariant}
                   className='text-5xl font-bold tracking-widest lg:text-6xl'
                 >
-                  Hi I'm <span className='text-blue-700'>Mark Landeryou</span>
+                  Hi I'm <span className='text-blue-700'>Mark</span>
                 </motion.h1>
                 <motion.h1
                   variants={opacityVariant}
