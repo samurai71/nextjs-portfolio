@@ -84,14 +84,14 @@ export default function TopNavbar() {
       </AnimatePresence>
 
       <Link href='/' passHref>
-        <div className='flex gap-2 items-center cursor-pointer z-50'>
+        <div className='z-50 flex items-center gap-2 cursor-pointer'>
           <motion.a
             initial='hidden'
             animate='visible'
             variants={popUp}
-            className='relative hidden sm:inline-flex mr-3'
+            className='relative hidden mr-3 sm:inline-flex'
           >
-            <h1 className='font-sarina text-xl text-blue-700'>ML</h1>
+            <h1 className='text-xl text-blue-700 font-sarina'>ML</h1>
           </motion.a>
           <motion.p
             initial='hidden'
@@ -102,13 +102,13 @@ export default function TopNavbar() {
             }}
             className='absolute sm:!hidden w-fit left-0 right-0 mx-auto flex justify-center  text-base font-sarina'
           >
-            Mark Landeryou
+            Mark
           </motion.p>
         </div>
       </Link>
 
       {/* Top Nav list */}
-      <motion.nav className='hidden sm:flex z-10 md:absolute md:inset-0 md:justify-center'>
+      <motion.nav className='z-10 hidden sm:flex md:absolute md:inset-0 md:justify-center'>
         <motion.div
           initial='hidden'
           animate='visible'
@@ -133,14 +133,14 @@ export default function TopNavbar() {
         initial='hidden'
         animate='visible'
         variants={popUp}
-        className='cursor-pointer rounded-full z-30 transition active:scale-75'
+        className='z-30 transition rounded-full cursor-pointer active:scale-75'
         title='Toggle Theme'
         onClick={() => changeDarkMode(!isDarkMode)}
       >
         {isDarkMode ? (
-          <FiMoon className='h-6 w-6 sm:h-7 sm:w-7 select-none transition active:scale-75' />
+          <FiMoon className='w-6 h-6 transition select-none sm:h-7 sm:w-7 active:scale-75' />
         ) : (
-          <FiSun className='h-6 w-6 sm:h-7 sm:w-7 select-none transition active:scale-75' />
+          <FiSun className='w-6 h-6 transition select-none sm:h-7 sm:w-7 active:scale-75' />
         )}
       </motion.div>
     </div>
@@ -179,7 +179,7 @@ function HamBurger({ open, handleClick }) {
       {!open ? (
         <svg
           xmlns='http://www.w3.org/2000/svg'
-          className='h-6 w-6 cursor-pointer select-none transform duration-300 rounded-md active:scale-50'
+          className='w-6 h-6 duration-300 transform rounded-md cursor-pointer select-none active:scale-50'
           onClick={handleClick}
           fill='none'
           viewBox='0 0 24 24'
@@ -195,7 +195,7 @@ function HamBurger({ open, handleClick }) {
       ) : (
         <svg
           xmlns='http://www.w3.org/2000/svg'
-          className='h-6 w-6 cursor-pointer select-none transform duration-300  rounded-md active:scale-50'
+          className='w-6 h-6 duration-300 transform rounded-md cursor-pointer select-none active:scale-50'
           onClick={handleClick}
           fill='none'
           viewBox='0 0 24 24'
@@ -217,13 +217,13 @@ function HamBurger({ open, handleClick }) {
 const MobileMenu = ({ links, handleClick }) => {
   return (
     <motion.div
-      className='absolute font-normal bg-white dark:bg-darkPrimary w-screen h-screen top-0 left-0 z-10 sm:hidden'
+      className='absolute top-0 left-0 z-10 w-screen h-screen font-normal bg-white dark:bg-darkPrimary sm:hidden'
       variants={hamFastFadeContainer}
       initial='hidden'
       animate='visible'
       exit='hidden'
     >
-      <motion.nav className='mt-28 mx-8 flex flex-col'>
+      <motion.nav className='flex flex-col mx-8 mt-28'>
         {links.map((link, index) => {
           const navlink =
             link.toLowerCase() === 'home' ? '/' : `/${link.toLowerCase()}`;
@@ -231,7 +231,7 @@ const MobileMenu = ({ links, handleClick }) => {
             <Link href={navlink} key={`mobileNav-${index}`} passHref>
               <motion.a
                 href={navlink}
-                className='border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 font-semibold flex w-auto py-4 capitalize text-base cursor-pointer'
+                className='flex w-auto py-4 text-base font-semibold text-gray-900 capitalize border-b border-gray-300 cursor-pointer dark:border-gray-700 dark:text-gray-100'
                 variants={mobileNavItemSideways}
                 onClick={handleClick}
               >

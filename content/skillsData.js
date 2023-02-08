@@ -15,6 +15,11 @@ module.exports = [
     pinned: true,
   },
   {
+    name: 'Typescript',
+    level: 80,
+    pinned: true,
+  },
+  {
     name: 'SASS',
     level: 80,
     pinned: false,

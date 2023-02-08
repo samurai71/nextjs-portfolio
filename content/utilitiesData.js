@@ -14,6 +14,7 @@ import {
   SiBitwarden,
   SiObsstudio,
   SiGrammarly,
+  SiFirefox,
 } from 'react-icons/si';
 import {
   BsFillPaletteFill,
@@ -50,6 +51,13 @@ const utilities = {
         description: 'Terminal Theme',
         Icon: BsFillTerminalFill,
         link: 'https://ohmyz.sh/',
+      },
+      {
+        name: 'Firefox',
+        description: 'Primary Browser',
+        Icon: SiFirefox,
+        link: 'https://www.mozilla.org/en-US/firefox/new/',
+
       },
       {
         name: 'Chrome',
