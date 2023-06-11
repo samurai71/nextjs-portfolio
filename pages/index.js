@@ -1,28 +1,28 @@
 // Page Components START----------
-import BlogsSection from '@components/Home/BlogsSection';
-import SkillSection from '@components/Home/SkillSection';
+import BlogsSection from '@components/Home/BlogsSection'
+import SkillSection from '@components/Home/SkillSection'
 // Page Components END------------
 
-import Image from 'next/image';
-import Metadata from '@components/MetaData';
-import Contact from '@components/Contact';
+import Image from 'next/image'
+import Metadata from '@components/MetaData'
+import Contact from '@components/Contact'
 import {
   FadeContainer,
   headingFromLeft,
   opacityVariant,
   popUp,
-} from '@content/FramerMotionVariants';
-import AnimatedHeading from '@components/FramerMotion/AnimatedHeading';
-import { homeProfileImage } from '@utils/utils';
-import { getPinnedSkills } from '@lib/dataFetch';
-import getRSS from '@lib/generateRSS';
-import generateSitemap from '@lib/sitemap';
-import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
-import { FiDownload } from 'react-icons/fi';
-import Ripples from 'react-ripples';
-import MDXContent from '@lib/MDXContent';
-import pageMeta from '@content/meta';
+} from '@content/FramerMotionVariants'
+import AnimatedHeading from '@components/FramerMotion/AnimatedHeading'
+import { homeProfileImage } from '@utils/utils'
+import { getPinnedSkills } from '@lib/dataFetch'
+import getRSS from '@lib/generateRSS'
+import generateSitemap from '@lib/sitemap'
+import { motion } from 'framer-motion'
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
+import { FiDownload } from 'react-icons/fi'
+import Ripples from 'react-ripples'
+import MDXContent from '@lib/MDXContent'
+import pageMeta from '@content/meta'
 
 export default function Home({ blogs, skills }) {
   return (
@@ -32,35 +32,35 @@ export default function Home({ blogs, skills }) {
         previewImage={pageMeta.home.image}
         keywords={pageMeta.home.keywords}
       />
-      <div className='relative max-w-4xl mx-auto dark:bg-darkPrimary dark:text-gray-100 2xl:max-w-5xl 3xl:max-w-7xl'>
+      <div className='relative mx-auto max-w-4xl dark:bg-darkPrimary dark:text-gray-100 2xl:max-w-5xl 3xl:max-w-7xl'>
         <motion.section
           initial='hidden'
           whileInView='visible'
           variants={FadeContainer}
           viewport={{ once: true }}
-          className='grid min-h-screen py-20 place-content-center'
+          className='grid min-h-screen place-content-center py-20'
         >
-          <div className='relative flex flex-col items-center w-full gap-10 mx-auto'>
+          <div className='relative mx-auto flex w-full flex-col items-center gap-10'>
             <motion.div
               variants={popUp}
-              className='relative flex items-center justify-center p-3 rounded-full w-44 h-44 xs:w-52 xs:h-52 before:absolute before:inset-0 before:border-t-4 before:border-b-4 before:border-black before:dark:border-white before:rounded-full before:animate-photo-spin'
+              className='relative flex h-44 w-44 items-center justify-center rounded-full p-3 before:absolute before:inset-0 before:animate-photo-spin before:rounded-full before:border-t-4 before:border-b-4 before:border-black before:dark:border-white xs:h-52 xs:w-52'
             >
-               {/* <Image
+              {/* <Image
                 src={homeProfileImage}
-                className='rounded-full shadow filter saturate-0'
+                className='rounded-full shadow saturate-0 filter'
                 width={400}
                 height={400}
                 alt='cover Profile Image'
                 quality={75}
                 priority={true}
-              />  */}
+              /> */}
             </motion.div>
 
-            <div className='flex flex-col w-full gap-3 p-5 text-center select-none '>
+            <div className='flex w-full select-none flex-col gap-3 p-5 text-center '>
               <div className='flex flex-col gap-1'>
                 <motion.p
                   variants={opacityVariant}
-                  className='italic tracking-widest text-red-600 uppercase text-md'
+                  className='text-md uppercase italic tracking-widest text-red-600'
                 >
                   Let's build something together
                 </motion.p>
@@ -86,7 +86,7 @@ export default function Home({ blogs, skills }) {
 
               <motion.p
                 variants={opacityVariant}
-                className='text-sm font-medium text-center text-slate-500 dark:text-gray-300 md:text-base'
+                className='text-center text-sm font-medium text-slate-500 dark:text-gray-300 md:text-base'
               >
                 I’m focused on building responsive web applications while
                 continually learning new technologies.
@@ -103,7 +103,7 @@ export default function Home({ blogs, skills }) {
                   target='_blank'
                   rel='noreferrer'
                 >
-                  <div className='p-6 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 dark:shadow-none dark:bg-slate-500 hover:scale-110'>
+                  <div className='cursor-pointer rounded-full p-6 shadow-lg shadow-gray-400 duration-300 ease-in hover:scale-110 dark:bg-slate-500 dark:shadow-none'>
                     <FaLinkedinIn />
                   </div>
                 </a>
@@ -112,7 +112,7 @@ export default function Home({ blogs, skills }) {
                   target='_blank'
                   rel='noreferrer'
                 >
-                  <div className='p-6 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 dark:shadow-none dark:bg-slate-500 hover:scale-110'>
+                  <div className='cursor-pointer rounded-full p-6 shadow-lg shadow-gray-400 duration-300 ease-in hover:scale-110 dark:bg-slate-500 dark:shadow-none'>
                     <FaGithub />
                   </div>
                 </a>
@@ -123,7 +123,7 @@ export default function Home({ blogs, skills }) {
             <motion.div className='overflow-hidden rounded-md' variants={popUp}>
               <Ripples className='w-full' color='rgba(0, 0, 0, 0.5)'>
                 <button
-                  className='flex items-center gap-2 px-5 py-2 border border-gray-500 rounded-md outline-none select-none dark:border-gray-400 hover:bg-gray-100 dark:hover:bg-neutral-800'
+                  className='flex select-none items-center gap-2 rounded-md border border-gray-500 px-5 py-2 outline-none hover:bg-gray-100 dark:border-gray-400 dark:hover:bg-neutral-800'
                   onClick={() => window.open('/resume')}
                 >
                   <FiDownload />
@@ -141,27 +141,27 @@ export default function Home({ blogs, skills }) {
         </div>
       </div>
     </>
-  );
+  )
 }
 
 export function HomeHeading({ title }) {
   return (
     <AnimatedHeading
-      className='w-full my-2 text-3xl font-bold text-left font-inter'
+      className='my-2 w-full text-left font-inter text-3xl font-bold'
       variants={headingFromLeft}
     >
       {title}
     </AnimatedHeading>
-  );
+  )
 }
 
 export async function getStaticProps() {
-  const blogs = new MDXContent('posts').getAllPosts().slice(0, 3);
-  const skills = getPinnedSkills();
-  await getRSS();
-  await generateSitemap();
+  const blogs = new MDXContent('posts').getAllPosts().slice(0, 3)
+  const skills = getPinnedSkills()
+  await getRSS()
+  await generateSitemap()
 
   return {
     props: { blogs, skills },
-  };
+  }
 }
