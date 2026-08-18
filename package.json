@@ -14,7 +14,7 @@
     "@fullhuman/postcss-purgecss": "^5.0.0",
     "@next/bundle-analyzer": "^13.1.6",
     "@tailwindcss/line-clamp": "^0.4.2",
-    "dompurify": "^2.4.3",
+    "dompurify": "^3.4.13",
     "firebase-admin": "^11.5.0",
     "framer-motion": "^9.0.2",
     "fs": "^0.0.1-security",
